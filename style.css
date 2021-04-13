@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.color-hightlight{
+    color:#6047ec;
+}
+.container{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/*nav sec*/
+.nav{
+	max-width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+    position: sticky;
+    z-index: 100;
+}
+.logo{
+
+	margin: 10px;
+}
+.lo{
+	font-family: 'Train One', cursive;
+
+}
+.links{
+	margin: 10px;
+}
+.list{
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.list li a{
+	text-decoration: none;
+	color: black;
+	margin: 10px;
+	padding: 10px;
+	font-size: 18px;
+    font-weight: 500;
+}
+.list li a:hover{
+    font-weight: 700;
+}
+.checkbtn{
+    font-size: 25px;
+    margin-left: 0;
+    color: #000;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+/*end*/
+.first-banner{
+    background-image: url(img/top-banner.png);
+    background-repeat: no-repeat;
+}
+.info{
+    width: 45%;
+    margin: 15px;
+    padding: 8px;
+}
+.info img{
+    width: 95%;
+}
+.info h1{
+    margin: 10px 20px;
+    font-size: 40px;
+    font-weight: 500;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+.info h2, h3, h4, p{
+    margin: 10px 20px;
+}
+.button{
+    text-decoration: none;
+    color:#ffffff;
+    background-image: linear-gradient(45deg, #b179e0, #6047ec);
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-weight: 700;
+    display: inline-flex;
+}
+.two{
+    display: none;
+}
+.second-banner{
+    background-image: url(img/dream-bg.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.button-2{
+    text-decoration: none;
+    color:#ffffff;
+    background-image: linear-gradient(45deg, #b179e0, #6047ec);
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-weight: 700;
+    display: inline-flex;
+}
+.experience{
+    margin: 50px 0;
+    background-image: url(img/exp-bg.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    text-align: center;
+}
+.exp{
+    width: 40%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 20px 10px;
+    padding: 5px;
+    box-shadow: 10px 10px 40px gray;
+    border-radius: 5px;
+}
+#f-s{
+    border-left: 7px solid;
+    border-image: linear-gradient(blue, pink);
+    border-image-slice: 1;
+}
+#b-g{
+    border-left: 7px solid;
+    border-image: linear-gradient(red, #ffa500);
+    border-image-slice: 1;
+}
+.portfolio{
+    margin: 50px 0;
+    text-align: center;
+}
+.p-f{
+    width: 20%;
+    box-shadow: 8px 8px 20px gray;
+}
+
+
+/*media */ 
+@media screen and (max-width: 694px) {
+    .logo{
+        font-size: 13px;
+    }
+    .checkbtn{
+        font-size: 18px;
+    }
+    .list li a{
+        font-size: 16px;
+    }
+    .info{
+        width: 48%;
+    }
+    .info img{
+        width: 100%;
+    }
+    .info h1{
+        margin: 10px 20px;
+        font-size: 24px;
+        font-weight: 500;
+        display: inline-flex;
+        flex-wrap: wrap;
+    }
+    .info h2{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .info h3{
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .info p{
+        font-size: 13px;
+    }
+    .info h3, h4, p{
+        margin: 10px 20px;
+    }
+    .info h4{
+        font-size: 13px;
+    }
+    .button{
+        display: none;
+    }
+    .two{
+        display: inline-flex;
+    }
+    .exp{
+        width: 85%;
+    }
+}
+footer{
+    text-align: center;
+}
+.s-l{
+    width: 100%;
+    text-align: center;
+
+}
+.s-l .ico{
+    margin: 10px;
+    padding: 5px;
+}
+.s-l .ico:hover{
+    font-size: 24px;
+}
+.e-m{
+    display: inline;
+    margin: 0;
+}
+@media screen and (max-width: 865px){
+    .nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .links{
+        text-align: center;
+        margin-top: 0;
+    }
+    .list{
+        flex-direction: column;
+        display: none;
+    }
+    .list li{
+        margin-bottom: 20px;
+    }
+    .checkbtn{
+        display: flex;
+        margin: 10px;
+    }
+    #check:checked ~ .list{
+        left: 0;
+        display: flex;
+        width: 100%;
+        transition: .82s;
+    }
+}
+@media screen and (max-width: 280px){
+    .button, .button-2{
+        font-size: 13px;
+    }
+    .logo .lo{
+        font-size: 12px;
+    }
+
+}
